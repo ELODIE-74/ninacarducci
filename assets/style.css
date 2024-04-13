@@ -84,14 +84,15 @@ body {
   font-style: italic;
   width: 60%;
 }
-#about-me p {
+/*enlever le #about-me p et remplacer*/
+#about-me_content {
   width: 80%;
   font-size: 14px;
 }
 
-#gallery {
+/*#gallery {
   /*	min-height: 100vh; */
-}
+/*}*/
 .title {
   text-align: center;
   padding-block: 2em;
@@ -99,11 +100,22 @@ body {
 .gallery .nav {
   justify-content: center;
 }
-.nav-pills .nav-link.active,
+/*ici pour changer les contraste*/
+/*.nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #beb45a;
   border-radius: 0;
+}*/
+.nav-item {
+  cursor: pointer;
+}
+/*couleur blanche pour un meilleur contraste, reprise couleur charte graphique, arrondi du bouton*/
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1c6474;
+  border-radius: 0.2rem;
 }
 .nav-pills .nav-link {
   color: #000;
@@ -253,8 +265,9 @@ input[type="submit"] {
     margin-top: 0;
     margin-bottom: 1em;
   }
-  #about-me h6,
-  #about-me p {
+  /*remplacement h6 et p en balise pour le texte des paragraphes + titre*/
+  #about-me about-me__introduction,
+  #about-me about-me__content {
     width: 100%;
   }
 }
